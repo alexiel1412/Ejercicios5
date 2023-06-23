@@ -13,7 +13,7 @@ public class Ej5_1
 		System.out.println("¿Cual será el tamaño del vector?");
 		int tam = teclado.nextInt();
 		int [] lista = new int [tam];
-		Funciones.rellenarVector(lista);
+		Funciones.rellenarVectorRN(lista);
 		Funciones.mostrarVector(lista);
 	}
 
