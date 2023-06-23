@@ -8,7 +8,7 @@ public class Ej5_1
 	public static void main(String[] args)
 	{
 		/* Rellenar un array de tamaño N con valores enteros dados por el usuario a través del 
-		teclado. */
+			teclado. */
 		Scanner teclado = new Scanner (System.in);
 		System.out.println("¿Cual será el tamaño del vector?");
 		int tam = teclado.nextInt();
