@@ -20,7 +20,8 @@ public class Ej5_2
 
 		System.out.println("Indique el número a comparar:");
 		Random random = new Random ();
-		double num = random.nextDouble(1, 101);   // Mete randoms de 1 a 10
+		double num = random.nextDouble(1, 101);   // Mete randoms de 1 a 100
+		System.out.printf("Menores a %.2f:\n\n", num);
 		Funciones.mostrarMenoresA(num, lista);
 	}
 }

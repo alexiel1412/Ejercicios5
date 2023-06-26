@@ -22,6 +22,7 @@ public class Ej5_3
 		Random random = new Random ();
 		double ini = random.nextDouble(-100, 101);   // Mete randoms de 1 a 10
 		double fin = random.nextDouble(-100, 101);   // Mete randoms de 1 a 10
+		System.out.printf("Los números que están entre %.2f y %.2f son:\n", ini, fin);
 		Funciones.mostrarRango(lista, ini, fin);
 	}
 }

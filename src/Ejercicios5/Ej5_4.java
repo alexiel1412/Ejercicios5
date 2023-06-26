@@ -17,6 +17,7 @@ public class Ej5_4
 		int [] lista = new int [tam];
 		Funciones.rellenarVectorRNAmplio(lista);
 		Funciones.mostrarVector(lista);
+		System.out.println("Modificando el vector:");
 		Funciones.circularVector(lista, false);
 		Funciones.mostrarVector(lista);
 	}
