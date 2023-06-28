@@ -125,28 +125,28 @@ public class Funciones
 	public static void mostrarRango(int[] vector, int ini, int fin)
 	{
 		for (int i = 0; i < vector.length; i++)
-			if ((vector[i] >= ini && vector[i] <= fin) || (vector[i] <= ini && vector[i] >= fin))
+			if ((vector[i] >= ini && vector[i] < fin) || (vector[i] <= ini && vector[i] > fin))
 				System.out.println("Casilla " + (i + 1) + ": " + vector[i]);
 	}
 
 	public static void mostrarRango(int[] vector, double ini, double fin)
 	{
 		for (int i = 0; i < vector.length; i++)
-			if ((vector[i] >= ini && vector[i] <= fin) || (vector[i] <= ini && vector[i] >= fin))
+			if ((vector[i] >= ini && vector[i] < fin) || (vector[i] <= ini && vector[i] > fin))
 				System.out.println("Casilla " + (i + 1) + ": " + vector[i]);
 	}
 
 	public static void mostrarRango(double[] vector, int ini, int fin)
 	{
 		for (int i = 0; i < vector.length; i++)
-			if ((vector[i] >= ini && vector[i] <= fin) || (vector[i] <= ini && vector[i] >= fin))
+			if ((vector[i] >= ini && vector[i] < fin) || (vector[i] <= ini && vector[i] > fin))
 				System.out.printf("Casilla %d: %.2f\n", (i + 1), vector[i]);
 	}
 
 	public static void mostrarRango(double[] vector, double ini, double fin)
 	{
 		for (int i = 0; i < vector.length; i++)
-			if ((vector[i] >= ini && vector[i] <= fin) || (vector[i] <= ini && vector[i] >= fin))
+			if ((vector[i] >= ini && vector[i] < fin) || (vector[i] <= ini && vector[i] > fin))
 				System.out.printf("Casilla %d: %.2f\n", (i + 1), vector[i]);
 	}
 
@@ -290,6 +290,8 @@ public class Funciones
 	{
 		if (vector.length == 1)
 			return true;
+		// for (int i = 0, j = vector.length - 1; i < j; i++, j--)
+			// if (vector[i] != vector[j])
 		for (int i = 0; i < (vector.length / 2); i++)
 			if (vector[i] != vector[vector.length - 1 - i])
 				return false;
